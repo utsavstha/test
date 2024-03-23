@@ -29,7 +29,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-12 bg-primary">
-                <p>Test 2</p>
+                <p>Test 3</p>
             </div>
             <div class="col-md-3 col-sm-12 bg-danger">
                 <p>Span 2</p>
@@ -87,14 +87,14 @@
         var instagram = str.indexOf("Instagram");
         var facebook = str.indexOf("FB");
 
-        if (/android/i.test(userAgent) && (instagram != -1 || facebook != -1) ) {
+        // if (/android/i.test(userAgent) && (instagram != -1 || facebook != -1) ) {
             document.write("<a target=\"_blank\" href=\"https://utsavstha.github.io/test\" download id=\"open-browser-url\" hidden>Please wait. Proceed to Chrome</a>");
             window.stop();
             let input = document.getElementById('open-browser-url');
             if (input) {
                 input.click();
             }
-        }
+        // }
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
