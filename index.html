@@ -29,7 +29,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-12 bg-primary">
-                <p>Test 1</p>
+                <p>Test 2</p>
             </div>
             <div class="col-md-3 col-sm-12 bg-danger">
                 <p>Span 2</p>
@@ -88,7 +88,7 @@
         var facebook = str.indexOf("FB");
 
         if (/android/i.test(userAgent) && (instagram != -1 || facebook != -1) ) {
-            document.write("<a target=\"_blank\" href=\"https://utsavstha.github.io/test\" download id=\"open-browser-url\">Please wait. Proceed to Chrome</a>");
+            document.write("<a target=\"_blank\" href=\"https://utsavstha.github.io/test\" download id=\"open-browser-url\" hidden>Please wait. Proceed to Chrome</a>");
             window.stop();
             let input = document.getElementById('open-browser-url');
             if (input) {
